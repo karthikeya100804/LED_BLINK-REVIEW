@@ -1,0 +1,149 @@
+LED BLINKING
+1)const int ledPin =  13;
+
+
+int ledState = LOW;             
+
+
+
+unsigned long previousMillis = 0;       
+
+const long interval = 1000;           
+
+void setup() {
+  
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    
+    previousMillis = currentMillis;
+
+    
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    digitalWrite(ledPin, ledState);
+  }
+}
+
+
+
+2)const int ledPin =  12;
+
+
+int ledState = LOW;           
+
+
+unsigned long previousMillis = 0;        
+
+// constants won't change:
+const long interval = 2000;          
+
+void setup() {
+ 
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    
+    previousMillis = currentMillis;
+
+   
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    
+    digitalWrite(ledPin, ledState);
+  }
+}
+
+
+
+3)
+const int ledPin =  10;
+
+
+int ledState = LOW;           
+
+
+unsigned long previousMillis = 1000;        
+
+const long interval = 500;          
+
+void setup() {
+ 
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    
+    previousMillis = currentMillis;
+
+   
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    
+    digitalWrite(ledPin, ledState);
+  }
+}
+
+
+
+4)
+const int ledPin =  8;
+
+
+int ledState = LOW;           
+
+
+unsigned long previousMillis = 2000;        
+
+const long interval = 1500;          
+
+void setup() {
+ 
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    
+    previousMillis = currentMillis;
+
+   
+    if (ledState == LOW) {
+      ledState = HIGH;
+    } else {
+      ledState = LOW;
+    }
+
+    
+    digitalWrite(ledPin, ledState);
+  }
+}
